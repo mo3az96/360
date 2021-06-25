@@ -1,0 +1,818 @@
+<!DOCTYPE HTML>
+<HTML dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no" />
+    <title>360 tarbya</title>
+    <link rel='shortcut icon' type='img/png' href='images/fav.png' />
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/bootstrap-rtl.min.css" />
+    <link rel="stylesheet" href="css/swiper.min.css" />
+    <link rel="stylesheet" href="css/fontawesome.min.css" />
+    <link rel="stylesheet" href="css/Linearicons.css" />
+    <link rel="stylesheet" href="css/select2.min.css" />
+    <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/main.css" />
+</head>
+
+<body class="overflow">
+    <!-- Start Preloader -->
+    <section class="preloader">
+        <img src="images/preloader.png">
+    </section>
+    <!-- End Preloader -->
+
+    <!-- Start Header -->
+    <header>
+        <div class="container">
+            <div class="header">
+                <div class="logo-cont">
+                    <a role="button" class="menu-btn">
+                        <span class="lnr lnr-menu"></span>
+                    </a>
+                    <a href="index.html" class="logo">
+                        <img src="images/logo.png" alt="360 tarbya" title="360 tarbya" class="img-fluid">
+                    </a>
+                </div>
+                <nav>
+                    <a role="button" class="close-btn">
+                        <span class="lnr lnr-cross"></span>
+                    </a>
+                    <ul class="mo-navbar list-unstyled">
+                        <li>
+                            <a href="index.html">
+                                الرئيسية
+                            </a>
+                        </li>
+                        <li>
+                            <a href="activities.html">
+                                أنشطة تربوية
+                            </a>
+                        </li>
+                        <li class="has-sub">
+                            <a href="plans.html">
+                                خطط تربوية
+                                <span class="lnr lnr-chevron-down"></span>
+                            </a>
+                            <ul class="sub-menu list-unstyled">
+                                <li>
+                                    <a href="plans.html">
+                                        3 - 6 سنوات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="plans.html">
+                                        6 - 9 سنوات
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="plans.html">
+                                        9 - 12 سنة
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="plans.html">
+                                        12 - 15 سنة
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="about.html">
+                                من نحن
+                            </a>
+                        </li>
+                        <li>
+                            <a href="contact.html">
+                                تواصل معنا
+                            </a>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="menu-overlay"></div>
+                <div class="header-tools">
+                    <a role="button" class="search-icon">
+                        <span class="lnr lnr-magnifier"></span>
+                        <span class="text">
+                            البحث
+                        </span>
+                    </a>
+                    <a role="button" class="user-btn">
+                        <span class="lnr lnr-user"></span>
+                        <span class="text">
+                            دخول/ تسجيل
+                        </span>
+                    </a>
+                </div>
+
+                <div class="search-overlay"></div>
+                <div class="search-cont">
+                    <form class="search-form">
+                        <input type="text" class="search-input" placeholder="البحث ....">
+                        <button class="search-btn">
+                            <span class="lnr lnr-magnifier"></span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- End Header -->
+
+    <!-- Start Breadcrumb -->
+    <section class="breadcrumb-section">
+        <ul class="mo-breadcrumb list-unstyled">
+            <li>
+                <a href="index.html">
+                    الرئيسية
+                </a>
+            </li>
+            <li>
+                <a role="button" class="active">
+                    خطط تربوية
+                </a>
+            </li>
+        </ul>
+        <h1 class="page-head">
+            خطط تربوية
+        </h1>
+    </section>
+    <!-- End Breadcrumb -->
+
+    <!-- Start Page Content -->
+    <section class="plans-page page-content">
+        <div class="container">
+            <div class="filter-overlay"></div>
+            <div class="plans-saerch">
+                <h3 class="search-head">
+                    تصفية البحث
+                </h3>
+                <form class="plans-saerch-form">
+                    <div class="main-line">
+                        <input type="text" class="form-control plans-saerch-input" placeholder="البحث">
+                        <div class="plans-saerch-select-cont select-cont">
+                            <select class="plans-saerch-select">
+                                <option value="1">المرحلة العمرية</option>
+                                <option value="2">3- 6 سنوات</option>
+                                <option value="3">6 - 9 سنوات</option>
+                                <option value="4">9 - 12 سنة</option>
+                                <option value="5">13 - 15 سنة</option>
+                            </select>
+                        </div>
+                        <button class="btn btn-secondary plans-saerch-submit">
+                            بحث
+                        </button>
+                    </div>
+                </form>
+                <div class="tools-line">
+                    <a role="button" class="reset" onclick="location.reload()">
+                        <span class="lnr lnr-undo"></span>
+                        استعادة
+                    </a>
+                </div>
+            </div>
+            <div class="list-page-head">
+                <h2 class="page-title-mobile">
+                    خطط تربوية
+                </h2>
+                <div class="mobile-icons">
+                    <div class="sort-cont">
+                        <span class="label">ترتيب حسب</span>
+                        <div class="sort-select-cont select-cont">
+                            <select class="sort-select">
+                                <option value="1">الأحدث</option>
+                                <option value="2">الأعلى مشاهدة</option>
+                                <option value="3">الأعلى تقييماً</option>
+                            </select>
+                        </div>
+                        <span class="fas fa-sort"></span>
+                    </div>
+                    <span class="filters-btn">
+                        <span class="fas fa-filter"></span>
+                        <span class="label">تصفية البحث</span>
+                    </span>
+                </div>
+                <div class="views-cont">
+                    <span class="view-btn grid active">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="22px"
+                            height="22px">
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M19.000,0.600 C20.325,0.600 21.400,1.674 21.400,3.000 C21.400,4.325 20.325,5.400 19.000,5.400 C17.674,5.400 16.600,4.325 16.600,3.000 C16.600,1.674 17.674,0.600 19.000,0.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M19.000,8.600 C20.325,8.600 21.400,9.674 21.400,11.000 C21.400,12.325 20.325,13.400 19.000,13.400 C17.674,13.400 16.600,12.325 16.600,11.000 C16.600,9.674 17.674,8.600 19.000,8.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M19.000,16.600 C20.325,16.600 21.400,17.674 21.400,19.000 C21.400,20.325 20.325,21.400 19.000,21.400 C17.674,21.400 16.600,20.325 16.600,19.000 C16.600,17.674 17.674,16.600 19.000,16.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M11.000,0.600 C12.325,0.600 13.400,1.674 13.400,3.000 C13.400,4.325 12.325,5.400 11.000,5.400 C9.674,5.400 8.600,4.325 8.600,3.000 C8.600,1.674 9.674,0.600 11.000,0.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M11.000,8.600 C12.325,8.600 13.400,9.674 13.400,11.000 C13.400,12.325 12.325,13.400 11.000,13.400 C9.674,13.400 8.600,12.325 8.600,11.000 C8.600,9.674 9.674,8.600 11.000,8.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M11.000,16.600 C12.325,16.600 13.400,17.674 13.400,19.000 C13.400,20.325 12.325,21.400 11.000,21.400 C9.674,21.400 8.600,20.325 8.600,19.000 C8.600,17.674 9.674,16.600 11.000,16.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M3.000,0.600 C4.325,0.600 5.400,1.674 5.400,3.000 C5.400,4.325 4.325,5.400 3.000,5.400 C1.674,5.400 0.600,4.325 0.600,3.000 C0.600,1.674 1.674,0.600 3.000,0.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M3.000,8.600 C4.325,8.600 5.400,9.674 5.400,11.000 C5.400,12.325 4.325,13.400 3.000,13.400 C1.674,13.400 0.600,12.325 0.600,11.000 C0.600,9.674 1.674,8.600 3.000,8.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M3.000,16.600 C4.325,16.600 5.400,17.674 5.400,19.000 C5.400,20.325 4.325,21.400 3.000,21.400 C1.674,21.400 0.600,20.325 0.600,19.000 C0.600,17.674 1.674,16.600 3.000,16.600 Z" />
+                        </svg>
+                    </span>
+                    <span class="view-btn list">
+                        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24px"
+                            height="23px">
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M3.000,0.600 C4.325,0.600 5.400,1.674 5.400,3.000 C5.400,4.325 4.325,5.400 3.000,5.400 C1.675,5.400 0.600,4.325 0.600,3.000 C0.600,1.674 1.675,0.600 3.000,0.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M3.000,8.600 C4.325,8.600 5.400,9.674 5.400,11.000 C5.400,12.325 4.325,13.400 3.000,13.400 C1.675,13.400 0.600,12.325 0.600,11.000 C0.600,9.674 1.675,8.600 3.000,8.600 Z" />
+                            <path fill-rule="evenodd" stroke="none"
+                                d="M3.000,16.600 C4.325,16.600 5.400,17.674 5.400,19.000 C5.400,20.325 4.325,21.400 3.000,21.400 C1.675,21.400 0.600,20.325 0.600,19.000 C0.600,17.674 1.675,16.600 3.000,16.600 Z" />
+                            <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter"
+                                fill="none" d="M8.000,3.000 L22.000,3.000 L8.000,3.000 Z" />
+                            <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter"
+                                fill="none" d="M8.000,11.000 L22.000,11.000 L8.000,11.000 Z" />
+                            <path fill-rule="evenodd" stroke-width="2px" stroke-linecap="butt" stroke-linejoin="miter"
+                                fill="none" d="M8.000,19.000 L22.000,19.000 L8.000,19.000 Z" />
+                        </svg>
+                    </span>
+                </div>
+            </div>
+            <div class="services-items-grid plans ">
+                <div class="service-item plan">
+                    <div class="service-item-info">
+                        <div class="service-item-img">
+                            <a href="plan.html" class="img-circle">
+                                <img src="images/items/01.jpg" alt="خطة تربوية " title="خطة تربوية "
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="info-cont">
+                            <h5 class="service-item-name" title="خطة تربوية ">
+                                <a href="plan.html">
+                                    خطة تربوية 
+                                </a>
+                            </h5>
+
+                            <p class="service-item-desc">
+                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+                                عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم
+                                إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة
+                                في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                                مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام
+                                كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية،
+                                لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح
+                                خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص
+                                لوريم إيبسوم حقيقي على الإنترنت.
+
+                            </p>
+                            <div class="service-item-footer">
+                                <a href="#!" class="owner">
+                                    <span class="owner-img">
+                                        <img src="images/shapes/item-owner.png" class="img-fluid">
+                                    </span>
+                                    <span class="owner-name">
+                                        مدير الموقع
+                                    </span>
+                                </a>
+                                <div class="service-item-tools">
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="العمر">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="22px">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                d="M6.508,15.228 L5.475,15.228 L5.475,20.768 C5.475,21.028 5.263,21.239 5.004,21.239 L1.995,21.239 C1.735,21.239 1.524,21.028 1.524,20.768 L1.524,15.228 L0.491,15.228 C0.231,15.228 0.020,15.016 0.020,14.757 L0.020,7.994 C0.020,7.320 0.568,6.771 1.243,6.771 L5.756,6.771 C6.442,6.771 6.979,7.308 6.979,7.994 L6.979,14.757 C6.979,15.016 6.768,15.228 6.508,15.228 ZM6.036,7.713 L0.962,7.713 L0.962,14.286 L1.995,14.286 C2.255,14.286 2.466,14.497 2.466,14.757 L2.466,20.297 L4.532,20.297 L4.532,14.757 C4.532,14.497 4.744,14.286 5.004,14.286 L6.036,14.286 L6.036,7.713 ZM3.499,4.707 C2.410,4.707 1.524,3.822 1.524,2.733 C1.524,1.645 2.410,0.759 3.499,0.759 C4.589,0.759 5.475,1.645 5.475,2.733 C5.475,3.822 4.589,4.707 3.499,4.707 ZM3.499,1.702 C2.930,1.702 2.466,2.164 2.466,2.733 C2.466,3.302 2.930,3.766 3.499,3.766 C4.069,3.766 4.532,3.302 4.532,2.733 C4.532,2.164 4.069,1.702 3.499,1.702 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="اضف لخططي">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15.5px" height="14.5px">
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M7.785,13.435 L7.785,0.565 L7.785,13.435 Z" />
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M1.065,7.000 L13.935,7.000 L1.065,7.000 Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item plan">
+                    <div class="service-item-info">
+                        <div class="service-item-img">
+                            <a href="plan.html" class="img-circle">
+                                <img src="images/items/02.jpg" alt="خطة تربوية " title="خطة تربوية "
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="info-cont">
+                            <h5 class="service-item-name"
+                                title="خطة تربوية  خطة تربوية  خطة تربوية  خطة تربوية  خطة تربوية  خطة تربوية ">
+                                <a href="plan.html">
+                                    خطة تربوية  خطة تربوية  خطة تربوية  خطة تربوية  لعبة
+                                    الطريق الأسرع لعبة
+                                    الطريق الأسرع
+                                </a>
+                            </h5>
+
+                            <p class="service-item-desc">
+                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+                                عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم
+                                إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة
+                                في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                                مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام
+                                كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية،
+                                لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح
+                                خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص
+                                لوريم إيبسوم حقيقي على الإنترنت.
+
+                            </p>
+                            <div class="service-item-footer">
+                                <a href="#!" class="owner">
+                                    <span class="owner-img">
+                                        <img src="images/shapes/item-owner.png" class="img-fluid">
+                                    </span>
+                                    <span class="owner-name">
+                                        مدير الموقع
+                                    </span>
+                                </a>
+                                <div class="service-item-tools">
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="العمر">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="22px">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                d="M6.508,15.228 L5.475,15.228 L5.475,20.768 C5.475,21.028 5.263,21.239 5.004,21.239 L1.995,21.239 C1.735,21.239 1.524,21.028 1.524,20.768 L1.524,15.228 L0.491,15.228 C0.231,15.228 0.020,15.016 0.020,14.757 L0.020,7.994 C0.020,7.320 0.568,6.771 1.243,6.771 L5.756,6.771 C6.442,6.771 6.979,7.308 6.979,7.994 L6.979,14.757 C6.979,15.016 6.768,15.228 6.508,15.228 ZM6.036,7.713 L0.962,7.713 L0.962,14.286 L1.995,14.286 C2.255,14.286 2.466,14.497 2.466,14.757 L2.466,20.297 L4.532,20.297 L4.532,14.757 C4.532,14.497 4.744,14.286 5.004,14.286 L6.036,14.286 L6.036,7.713 ZM3.499,4.707 C2.410,4.707 1.524,3.822 1.524,2.733 C1.524,1.645 2.410,0.759 3.499,0.759 C4.589,0.759 5.475,1.645 5.475,2.733 C5.475,3.822 4.589,4.707 3.499,4.707 ZM3.499,1.702 C2.930,1.702 2.466,2.164 2.466,2.733 C2.466,3.302 2.930,3.766 3.499,3.766 C4.069,3.766 4.532,3.302 4.532,2.733 C4.532,2.164 4.069,1.702 3.499,1.702 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="اضف لخططي">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15.5px" height="14.5px">
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M7.785,13.435 L7.785,0.565 L7.785,13.435 Z" />
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M1.065,7.000 L13.935,7.000 L1.065,7.000 Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item plan">
+                    <div class="service-item-info">
+                        <div class="service-item-img">
+                            <a href="plan.html" class="img-circle">
+                                <img src="images/items/03.jpg" alt="خطة تربوية " title="خطة تربوية "
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="info-cont">
+                            <h5 class="service-item-name" title="خطة تربوية ">
+                                <a href="plan.html">
+                                    خطة تربوية 
+                                </a>
+                            </h5>
+
+                            <p class="service-item-desc">
+                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+                                عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم
+                                إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة
+                                في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                                مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام
+                                كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية،
+                                لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح
+                                خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص
+                                لوريم إيبسوم حقيقي على الإنترنت.
+
+                            </p>
+                            <div class="service-item-footer">
+                                <a href="#!" class="owner">
+                                    <span class="owner-img">
+                                        <img src="images/shapes/item-owner.png" class="img-fluid">
+                                    </span>
+                                    <span class="owner-name">
+                                        مدير الموقع
+                                    </span>
+                                </a>
+                                <div class="service-item-tools">
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="العمر">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="22px">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                d="M6.508,15.228 L5.475,15.228 L5.475,20.768 C5.475,21.028 5.263,21.239 5.004,21.239 L1.995,21.239 C1.735,21.239 1.524,21.028 1.524,20.768 L1.524,15.228 L0.491,15.228 C0.231,15.228 0.020,15.016 0.020,14.757 L0.020,7.994 C0.020,7.320 0.568,6.771 1.243,6.771 L5.756,6.771 C6.442,6.771 6.979,7.308 6.979,7.994 L6.979,14.757 C6.979,15.016 6.768,15.228 6.508,15.228 ZM6.036,7.713 L0.962,7.713 L0.962,14.286 L1.995,14.286 C2.255,14.286 2.466,14.497 2.466,14.757 L2.466,20.297 L4.532,20.297 L4.532,14.757 C4.532,14.497 4.744,14.286 5.004,14.286 L6.036,14.286 L6.036,7.713 ZM3.499,4.707 C2.410,4.707 1.524,3.822 1.524,2.733 C1.524,1.645 2.410,0.759 3.499,0.759 C4.589,0.759 5.475,1.645 5.475,2.733 C5.475,3.822 4.589,4.707 3.499,4.707 ZM3.499,1.702 C2.930,1.702 2.466,2.164 2.466,2.733 C2.466,3.302 2.930,3.766 3.499,3.766 C4.069,3.766 4.532,3.302 4.532,2.733 C4.532,2.164 4.069,1.702 3.499,1.702 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="اضف لخططي">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15.5px" height="14.5px">
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M7.785,13.435 L7.785,0.565 L7.785,13.435 Z" />
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M1.065,7.000 L13.935,7.000 L1.065,7.000 Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item plan">
+                    <div class="service-item-info">
+                        <div class="service-item-img">
+                            <a href="plan.html" class="img-circle">
+                                <img src="images/items/04.jpg" alt="خطة تربوية " title="خطة تربوية "
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="info-cont">
+                            <h5 class="service-item-name" title="خطة تربوية ">
+                                <a href="plan.html">
+                                    خطة تربوية 
+                                </a>
+                            </h5>
+
+                            <p class="service-item-desc">
+                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+                                عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم
+                                إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة
+                                في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                                مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام
+                                كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية،
+                                لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح
+                                خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص
+                                لوريم إيبسوم حقيقي على الإنترنت.
+
+                            </p>
+                            <div class="service-item-footer">
+                                <a href="#!" class="owner">
+                                    <span class="owner-img">
+                                        <img src="images/shapes/item-owner.png" class="img-fluid">
+                                    </span>
+                                    <span class="owner-name">
+                                        مدير الموقع
+                                    </span>
+                                </a>
+                                <div class="service-item-tools">
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="العمر">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="22px">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                d="M6.508,15.228 L5.475,15.228 L5.475,20.768 C5.475,21.028 5.263,21.239 5.004,21.239 L1.995,21.239 C1.735,21.239 1.524,21.028 1.524,20.768 L1.524,15.228 L0.491,15.228 C0.231,15.228 0.020,15.016 0.020,14.757 L0.020,7.994 C0.020,7.320 0.568,6.771 1.243,6.771 L5.756,6.771 C6.442,6.771 6.979,7.308 6.979,7.994 L6.979,14.757 C6.979,15.016 6.768,15.228 6.508,15.228 ZM6.036,7.713 L0.962,7.713 L0.962,14.286 L1.995,14.286 C2.255,14.286 2.466,14.497 2.466,14.757 L2.466,20.297 L4.532,20.297 L4.532,14.757 C4.532,14.497 4.744,14.286 5.004,14.286 L6.036,14.286 L6.036,7.713 ZM3.499,4.707 C2.410,4.707 1.524,3.822 1.524,2.733 C1.524,1.645 2.410,0.759 3.499,0.759 C4.589,0.759 5.475,1.645 5.475,2.733 C5.475,3.822 4.589,4.707 3.499,4.707 ZM3.499,1.702 C2.930,1.702 2.466,2.164 2.466,2.733 C2.466,3.302 2.930,3.766 3.499,3.766 C4.069,3.766 4.532,3.302 4.532,2.733 C4.532,2.164 4.069,1.702 3.499,1.702 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="اضف لخططي">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15.5px" height="14.5px">
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M7.785,13.435 L7.785,0.565 L7.785,13.435 Z" />
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M1.065,7.000 L13.935,7.000 L1.065,7.000 Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item plan">
+                    <div class="service-item-info">
+                        <div class="service-item-img">
+                            <a href="plan.html" class="img-circle">
+                                <img src="images/items/05.jpg" alt="خطة تربوية " title="خطة تربوية "
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="info-cont">
+                            <h5 class="service-item-name" title="خطة تربوية ">
+                                <a href="plan.html">
+                                    خطة تربوية 
+                                </a>
+                            </h5>
+
+                            <p class="service-item-desc">
+                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+                                عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم
+                                إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة
+                                في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                                مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام
+                                كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية،
+                                لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح
+                                خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص
+                                لوريم إيبسوم حقيقي على الإنترنت.
+
+                            </p>
+                            <div class="service-item-footer">
+                                <a href="#!" class="owner">
+                                    <span class="owner-img">
+                                        <img src="images/shapes/item-owner.png" class="img-fluid">
+                                    </span>
+                                    <span class="owner-name">
+                                        مدير الموقع
+                                    </span>
+                                </a>
+                                <div class="service-item-tools">
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="العمر">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="22px">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                d="M6.508,15.228 L5.475,15.228 L5.475,20.768 C5.475,21.028 5.263,21.239 5.004,21.239 L1.995,21.239 C1.735,21.239 1.524,21.028 1.524,20.768 L1.524,15.228 L0.491,15.228 C0.231,15.228 0.020,15.016 0.020,14.757 L0.020,7.994 C0.020,7.320 0.568,6.771 1.243,6.771 L5.756,6.771 C6.442,6.771 6.979,7.308 6.979,7.994 L6.979,14.757 C6.979,15.016 6.768,15.228 6.508,15.228 ZM6.036,7.713 L0.962,7.713 L0.962,14.286 L1.995,14.286 C2.255,14.286 2.466,14.497 2.466,14.757 L2.466,20.297 L4.532,20.297 L4.532,14.757 C4.532,14.497 4.744,14.286 5.004,14.286 L6.036,14.286 L6.036,7.713 ZM3.499,4.707 C2.410,4.707 1.524,3.822 1.524,2.733 C1.524,1.645 2.410,0.759 3.499,0.759 C4.589,0.759 5.475,1.645 5.475,2.733 C5.475,3.822 4.589,4.707 3.499,4.707 ZM3.499,1.702 C2.930,1.702 2.466,2.164 2.466,2.733 C2.466,3.302 2.930,3.766 3.499,3.766 C4.069,3.766 4.532,3.302 4.532,2.733 C4.532,2.164 4.069,1.702 3.499,1.702 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="اضف لخططي">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15.5px" height="14.5px">
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M7.785,13.435 L7.785,0.565 L7.785,13.435 Z" />
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M1.065,7.000 L13.935,7.000 L1.065,7.000 Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="service-item plan">
+                    <div class="service-item-info">
+                        <div class="service-item-img">
+                            <a href="plan.html" class="img-circle">
+                                <img src="images/items/06.jpg" alt="خطة تربوية " title="خطة تربوية "
+                                    class="img-fluid">
+                            </a>
+                        </div>
+                        <div class="info-cont">
+                            <h5 class="service-item-name" title="خطة تربوية ">
+                                <a href="plan.html">
+                                    خطة تربوية 
+                                </a>
+                            </h5>
+
+                            <p class="service-item-desc">
+                                هنالك العديد من الأنواع المتوفرة لنصوص لوريم إيبسوم، ولكن الغالبية تم تعديلها بشكل ما
+                                عبر إدخال بعض النوادر أو الكلمات العشوائية إلى النص. إن كنت تريد أن تستخدم نص لوريم
+                                إيبسوم ما، عليك أن تتحقق أولاً أن ليس هناك أي كلمات أو عبارات محرجة أو غير لائقة مخبأة
+                                في هذا النص. بينما تعمل جميع مولّدات نصوص لوريم إيبسوم على الإنترنت على إعادة تكرار
+                                مقاطع من نص لوريم إيبسوم نفسه عدة مرات بما تتطلبه الحاجة، يقوم مولّدنا هذا باستخدام
+                                كلمات من قاموس يحوي على أكثر من 200 كلمة لا تينية، مضاف إليها مجموعة من الجمل النموذجية،
+                                لتكوين نص لوريم إيبسوم ذو شكل منطقي قريب إلى النص الحقيقي. وبالتالي يكون النص الناتح
+                                خالي من التكرار، أو أي كلمات أو عبارات غير لائقة أو ما شابه. وهذا ما يجعله أول مولّد نص
+                                لوريم إيبسوم حقيقي على الإنترنت.
+
+                            </p>
+                            <div class="service-item-footer">
+                                <a href="#!" class="owner">
+                                    <span class="owner-img">
+                                        <img src="images/shapes/item-owner.png" class="img-fluid">
+                                    </span>
+                                    <span class="owner-name">
+                                        مدير الموقع
+                                    </span>
+                                </a>
+                                <div class="service-item-tools">
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="العمر">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="7px" height="22px">
+                                            <path fill-rule="evenodd" fill="rgb(255, 255, 255)"
+                                                d="M6.508,15.228 L5.475,15.228 L5.475,20.768 C5.475,21.028 5.263,21.239 5.004,21.239 L1.995,21.239 C1.735,21.239 1.524,21.028 1.524,20.768 L1.524,15.228 L0.491,15.228 C0.231,15.228 0.020,15.016 0.020,14.757 L0.020,7.994 C0.020,7.320 0.568,6.771 1.243,6.771 L5.756,6.771 C6.442,6.771 6.979,7.308 6.979,7.994 L6.979,14.757 C6.979,15.016 6.768,15.228 6.508,15.228 ZM6.036,7.713 L0.962,7.713 L0.962,14.286 L1.995,14.286 C2.255,14.286 2.466,14.497 2.466,14.757 L2.466,20.297 L4.532,20.297 L4.532,14.757 C4.532,14.497 4.744,14.286 5.004,14.286 L6.036,14.286 L6.036,7.713 ZM3.499,4.707 C2.410,4.707 1.524,3.822 1.524,2.733 C1.524,1.645 2.410,0.759 3.499,0.759 C4.589,0.759 5.475,1.645 5.475,2.733 C5.475,3.822 4.589,4.707 3.499,4.707 ZM3.499,1.702 C2.930,1.702 2.466,2.164 2.466,2.733 C2.466,3.302 2.930,3.766 3.499,3.766 C4.069,3.766 4.532,3.302 4.532,2.733 C4.532,2.164 4.069,1.702 3.499,1.702 Z" />
+                                        </svg>
+                                    </a>
+                                    <a href="#!" class="service-item-tool" data-toggle="tooltip" data-placement="top"
+                                        title="اضف لخططي">
+                                        <svg xmlns="http://www.w3.org/2000/svg"
+                                            xmlns:xlink="http://www.w3.org/1999/xlink" width="15.5px" height="14.5px">
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M7.785,13.435 L7.785,0.565 L7.785,13.435 Z" />
+                                            <path fill-rule="evenodd" stroke="rgb(242, 242, 242)" stroke-width="1px"
+                                                stroke-linecap="butt" stroke-linejoin="miter" fill="none"
+                                                d="M1.065,7.000 L13.935,7.000 L1.065,7.000 Z" />
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="lds-spinner">
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </section>
+    <!-- End Page Content -->
+
+    <!-- Start App Links -->
+    <section class="app-links-section">
+        <img src="images/shapes/pat.png">
+        <h3 class="app-links-head wow fadeInDown">
+            حمل تطبيق 360 تربية الآن
+        </h3>
+        <div class="app-links">
+            <a href="#!" class="wow slideInRight">
+                <img src="images/download/apple.png" class="img-fluid">
+            </a>
+            <a href="#!" class="wow slideInLeft">
+                <img src="images/download/google.png" class="img-fluid">
+            </a>
+        </div>
+    </section>
+    <!-- End App Links -->
+
+    <!-- Start Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer">
+                <p class="copyrights">
+                    © 360 تربية، جميع الحقوق محفوظة 2021
+                </p>
+                <div class="footer-logo">
+                    <img src="images/logo.png" class="img-fluid">
+                </div>
+                <div class="socials">
+                    <a href="#!" class="social">
+                        <i class="fas fa-envelope"></i>
+                    </a>
+                    <a href="#!" class="social">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                    <a href="#!" class="social">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- End Footer -->
+
+    <div class="modal-overlay"></div>
+    <!-- Start log Modal -->
+    <section class="modal-scroll login-modal">
+        <div class="modal-cont">
+            <div class="mo-modal-head">
+                <h4 class="modal-head">
+                    <img src="images/shapes/modalTitle.png" class="img-fluid">
+                    تسجيل دخول
+                </h4>
+                <a role="button" class="modal-close-btn">
+                    <span class="lnr lnr-cross"></span>
+                </a>
+            </div>
+            <div class="mo-modal-body">
+                <form class="login-form">
+                    <div class="form-group required">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group required">
+                        <label>كلمة المرور</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="anchors-line">
+                        <a href="#!" class="frgt">
+                            هل نسيت كلمة المرور؟
+                        </a>
+                        <span class="other-modal">
+                            ليس لديك حساب؟
+                            <a role="button" class="reg-btn">
+                                سجل الآن
+                            </a>
+                        </span>
+                    </div>
+                    <!-- <button class="modal-submit">
+            دخول
+          </button> -->
+                    <a href="profile.html" class="modal-submit">
+                        دخول
+                    </a>
+                </form>
+            </div>
+            <div class="mo-modal-foot">
+                <h5 class="social-log-head">
+                    <span>أو الدخول بواسطة</span>
+                </h5>
+                <div class="socials-log">
+                    <a href="#!" class="social-log">
+                        <img src="images/social/01.png" class="img-fluid">
+                    </a>
+                    <a href="#!" class="social-log">
+                        <img src="images/social/02.png" class="img-fluid">
+                    </a>
+                    <a href="#!" class="social-log">
+                        <img src="images/social/03.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End log Modal -->
+
+    <!-- Start reg Modal -->
+    <section class="modal-scroll reg-modal">
+        <div class="modal-cont">
+            <div class="mo-modal-head">
+                <h4 class="modal-head">
+                    <img src="images/shapes/modalTitle.png" class="img-fluid">
+                    تسجيل جديد
+                </h4>
+                <a role="button" class="modal-close-btn">
+                    <span class="lnr lnr-cross"></span>
+                </a>
+            </div>
+            <div class="mo-modal-body">
+                <form class="login-form">
+                    <div class="form-group required">
+                        <label>الاسم</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group required">
+                        <label>البريد الإلكتروني</label>
+                        <input type="email" class="form-control">
+                    </div>
+                    <div class="form-group required">
+                        <label>كلمة المرور</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group required">
+                        <label>تأكيد كلمة المرور</label>
+                        <input type="password" class="form-control">
+                    </div>
+                    <div class="form-group required">
+                        <div class="agree">
+                            <label class="custom-checkbox">
+                                <input type="checkbox">
+                                <span class="check-mark"><i class="fas fa-check"></i></span>
+                            </label>
+                            <span class="text">
+                                أوافق على
+                                <a href="#!">سياسة الخصوصية</a>
+                                و
+                                <a href="#!">الشروط والأحكام</a>
+                            </span>
+                        </div>
+                    </div>
+                    <button class="modal-submit">
+                        تسجيل
+                    </button>
+                </form>
+                <span class="other-modal">
+                    لديك حساب؟
+                    <a role="button" class="log-btn">
+                        سجل دخول
+                    </a>
+                </span>
+            </div>
+            <div class="mo-modal-foot">
+                <h5 class="social-log-head">
+                    <span>أو التسجيل بواسطة</span>
+                </h5>
+                <div class="socials-log">
+                    <a href="#!" class="social-log">
+                        <img src="images/social/01.png" class="img-fluid">
+                    </a>
+                    <a href="#!" class="social-log">
+                        <img src="images/social/02.png" class="img-fluid">
+                    </a>
+                    <a href="#!" class="social-log">
+                        <img src="images/social/03.png" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- End reg Modal -->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/select2.min.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</HTML>

@@ -3233,6 +3233,9 @@ html[dir="ltr"] .mo-tabs a .text {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 
@@ -4249,14 +4252,17 @@ html[dir="ltr"] .plans-saerch-submit {
 
 @media (max-width: 767px) {
   .plan-nums {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    margin-top: 5px;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    gap: 10px;
+    width: 100%;
+    margin-top: 10px;
   }
 }
 
@@ -4287,6 +4293,15 @@ html[dir="ltr"] .plan-num .lnr, html[dir="ltr"]
   margin-right: 5px;
 }
 
+@media (max-width: 767px) {
+  .plan-num {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 html[dir="rtl"] .plan-num ~ .plan-num {
   margin-right: 29px;
 }
@@ -4296,20 +4311,46 @@ html[dir="ltr"] .plan-num ~ .plan-num {
 }
 
 @media (max-width: 767px) {
-  .plan-num ~ .plan-num {
-    margin-top: 5px;
-  }
   html[dir="rtl"] .plan-num ~ .plan-num {
-    margin-right: 0;
+    margin: 0;
   }
   html[dir="ltr"] .plan-num ~ .plan-num {
-    margin-left: 0;
+    margin: 0;
   }
 }
 
 .plan-page .desc-block {
   border-bottom: none;
   padding-bottom: 0;
+}
+
+.plan-activities {
+  border-top: 1px solid #e6e6e6;
+  margin-top: 35px;
+  padding-top: 45px;
+}
+
+.plan-activities-head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 50px;
+}
+
+.plan-activities-head .activity-desc-title {
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .plan-page aside {
+    margin-top: 0;
+  }
 }
 
 .app-links-section {

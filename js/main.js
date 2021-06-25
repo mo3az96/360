@@ -150,6 +150,9 @@ $(document).ready(function () {
     if ($(window).width() >= 991) {
         $('.activities-saerch-select').select2();
         $('.plans-saerch-select').select2();
+        $('.profile-select').select2({
+            dropdownCssClass: "profile-select-dropdown"
+        });
         $(".sort-select").select2({
             minimumResultsForSearch: Infinity
         });
@@ -237,6 +240,21 @@ $(document).ready(function () {
             },
         });
     }
+    //////////** password **//////////
+    $('.form-group .show').click(function () {
+        var attr = $(this).siblings(".form-control").attr("type");
+        if (attr == "password") {
+            $(this).siblings(".form-control").attr("type", "text");
+        } else {
+            $(this).siblings(".form-control").attr("type", "password");
+        }
+        $(this).toggleClass("active")
+    })
+    //////////** states **//////////
+    $('.states-btn').click(function () {
+        $(".states-mobile").toggleClass("active")
+        $(this).toggleClass("active")
+    })
 });
 function onScroll(event) {
     var scrollPos = $(document).scrollTop();

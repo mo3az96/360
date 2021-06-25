@@ -1957,6 +1957,43 @@ html[dir="ltr"] .select2-container .select2-selection--single .select2-selection
   }
 }
 
+.select-cont {
+  position: relative;
+}
+
+.select-cont select {
+  background-color: #fff;
+  height: 39px;
+  width: 100%;
+  border: 2px solid #f2f2f2;
+  border-radius: 20px;
+  padding: 0 25px;
+  color: #808080;
+  font-size: 14px;
+  font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+}
+
+.select-cont::after {
+  font-family: 'Linearicons-Free';
+  content: "\e874";
+  font-size: 10px;
+  color: #808080;
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+html[dir="rtl"] .select-cont::after {
+  left: 25px;
+}
+
+html[dir="ltr"] .select-cont::after {
+  right: 25px;
+}
+
 .preloader {
   width: 100vw;
   height: 100vh;

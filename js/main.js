@@ -147,9 +147,9 @@ $(document).ready(function () {
         $(this).addClass("active");
     })
     //////////** select2 **//////////
-    $('.activities-saerch-select').select2();
-    $('.plans-saerch-select').select2();
     if ($(window).width() >= 991) {
+        $('.activities-saerch-select').select2();
+        $('.plans-saerch-select').select2();
         $(".sort-select").select2({
             minimumResultsForSearch: Infinity
         });

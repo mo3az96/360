@@ -695,7 +695,7 @@ html[dir="ltr"] .buttons .btn ~ .btn {
   transition: all 0.3s ease-in-out;
 }
 
-.btn-secondary:not(:disabled):hover, .btn-secondary:not(:disabled):focus, .btn-secondary:not(:disabled):active, .btn-secondary:not(.disabled):hover, .btn-secondary:not(.disabled):focus, .btn-secondary:not(.disabled):active {
+.btn-secondary:not(:disabled):not(.disabled):hover, .btn-secondary:not(:disabled):not(.disabled):focus, .btn-secondary:not(:disabled):not(.disabled):active {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
@@ -733,7 +733,7 @@ html[dir="ltr"] .buttons .btn ~ .btn {
   transition: all 0.3s ease-in-out;
 }
 
-.btn-primary:not(:disabled):hover, .btn-primary:not(:disabled):focus, .btn-primary:not(:disabled):active, .btn-primary:not(.disabled):hover, .btn-primary:not(.disabled):focus, .btn-primary:not(.disabled):active {
+.btn-primary:not(:disabled):not(.disabled):hover, .btn-primary:not(:disabled):not(.disabled):focus, .btn-primary:not(:disabled):not(.disabled):active {
   -webkit-box-shadow: none;
           box-shadow: none;
   border: none;
@@ -5328,6 +5328,12 @@ html[dir="ltr"] .user-side-link.active::before {
   margin-top: 60px;
 }
 
+@media (max-width: 767px) {
+  .edit-pass {
+    margin-top: 40px;
+  }
+}
+
 .states-btn {
   display: none;
 }
@@ -5845,6 +5851,17 @@ html[dir="ltr"] .profile-table .progress-num span:first-of-type {
 .addFile .file-pre button:hover, .addFile .file-pre button:focus {
   color: #fff;
   background-color: #8318a4;
+}
+
+.edit-notification {
+  border-top: 2px solid #f2f2f2;
+  margin-top: 60px;
+}
+
+@media (max-width: 767px) {
+  .edit-notification {
+    margin-top: 40px;
+  }
 }
 
 .app-links-section {

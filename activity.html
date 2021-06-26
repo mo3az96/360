@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="css/Linearicons.css" />
     <link rel="stylesheet" href="css/select2.min.css" />
     <link rel="stylesheet" href="css/animate.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css" />
     <link rel="stylesheet" href="css/main.css" />
 </head>
 
@@ -208,7 +209,23 @@
                 <div class="col-xl-8 col-lg-7">
                     <div class="details-cont" id="details">
                         <div class="activity-img">
-                            <img src="images/activity/01.jpg" class="img-fluid">
+                            <div class="swiper-container">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide">
+                                        <a data-fancybox="project-img" href="images/activity/01.jpg" class="slider-img">
+                                            <img src="images/activity/01.jpg" class="img-fluid"></a>
+                                    </div>
+                                    <div class="swiper-slide">
+                                        <a data-fancybox="project-img" href="images/plan/01.jpg" class="slider-img">
+                                            <img src="images/plan/01.jpg" class="img-fluid"></a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-pagination"></div>
+
+                            <div class="swiper-btn-next swiper-btn"><span class='lnr lnr-chevron-left'></span></div>
+                            <div class="swiper-btn-prev swiper-btn"><span class='lnr lnr-chevron-right'></span></div>
                         </div>
                         <div class="info-line">
                             <a href="#!" class="activity-owner">
@@ -1144,6 +1161,7 @@
     <script src="js/swiper.min.js"></script>
     <script src="js/select2.min.js"></script>
     <script src="js/wow.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 

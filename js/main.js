@@ -157,7 +157,6 @@ $(document).ready(function () {
             minimumResultsForSearch: Infinity
         });
     }
-
     //////////** filter **//////////
     if ($(window).width() <= 991) {
         $('.filters-btn').click(function () {
@@ -171,6 +170,22 @@ $(document).ready(function () {
             $(".filter-overlay").fadeOut(300);
         })
     }
+    //////////** activity imgs **//////////
+    var activityimgswiper = new Swiper('.activity-img .swiper-container', {
+        spaceBetween: 10,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+        },
+        pagination: {
+            el: '.activity-img .swiper-pagination',
+            clickable: true,
+        },
+        navigation: {
+            nextEl: '.activity-img .swiper-btn-next',
+            prevEl: '.activity-img .swiper-btn-prev',
+        },
+    });
     //////////** scroll to section **//////////
     $(document).on("scroll", onScroll);
     $('.sticky-section a[data-href^="#"]').on('click', function (e) {

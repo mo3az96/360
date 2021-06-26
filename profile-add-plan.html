@@ -172,13 +172,18 @@
                 </a>
             </li>
             <li>
+                <a href="profile-my-plans.html">
+                    خططي
+                </a>
+            </li>
+            <li>
                 <a role="button" class="active">
-                    الملف الشخصي
+                    اضافة خطة جديدة
                 </a>
             </li>
         </ul>
         <h1 class="page-head">
-            الملف الشخصي
+            اضافة خطة جديدة
         </h1>
     </section>
     <!-- End Breadcrumb -->
@@ -255,7 +260,7 @@
             <div class="row">
                 <div class="col-lg-3">
                     <div class="user-side-links">
-                        <a href="profile.html" class="user-side-link active">
+                        <a href="profile.html" class="user-side-link ">
                             <span class="lnr lnr-user"></span>
                             الملف الشخصي
                         </a>
@@ -263,7 +268,7 @@
                             <span class="lnr lnr-layers"></span>
                             أنشطتي
                         </a>
-                        <a href="profile-my-plans.html" class="user-side-link">
+                        <a href="profile-my-plans.html" class="user-side-link active">
                             <span class="lnr lnr-layers"></span>
                             خططي
                         </a>
@@ -278,101 +283,50 @@
                     </div>
                 </div>
                 <div class="col-lg-9">
-                    <form class="edit-profile">
-                        <div class="profile-head-flex">
-                            <h2 class="profile-title">
-                                الملف الشخصي
-                            </h2>
-                        </div>
+                    <div class="profile-head-flex">
+                        <h2 class="profile-title">
+                            اضافة خطة جديدة
+                        </h2>
+                    </div>
+                    <form class="plan-form">
                         <div class="form-line">
-                            <div class="form-group">
-                                <label>الاسم</label>
+                            <div class="form-group required">
+                                <label>عنوان الخطة</label>
                                 <input type="text" class="form-control">
                             </div>
-                            <div class="form-group">
-                                <label>البريد الإلكتروني</label>
-                                <input type="email" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>الجوال</label>
-                                <input type="number" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>الصفة الشخصية</label>
+                            <div class="form-group required">
+                                <label>المرحلة العمرية</label>
                                 <div class="profile-select-cont select-cont">
                                     <select class="profile-select">
                                         <option value="1">اختر</option>
-                                        <option value="2">صفة 1</option>
-                                        <option value="3">صفة 2</option>
-                                        <option value="3">صفة 3</option>
-                                        <option value="3">صفة 4</option>
-                                        <option value="3">صفة 5</option>
-                                        <option value="3">صفة 6</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>مكان الإقامة</label>
-                                <div class="profile-select-cont select-cont">
-                                    <select class="profile-select">
-                                        <option value="1">اختر</option>
-                                        <option value="2">مكان 1</option>
-                                        <option value="3">مكان 2</option>
-                                        <option value="3">مكان 3</option>
-                                        <option value="3">مكان 4</option>
-                                        <option value="3">مكان 5</option>
-                                        <option value="3">مكان 6</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <label>المدينة</label>
-                                <div class="profile-select-cont select-cont">
-                                    <select class="profile-select">
-                                        <option value="1">اختر</option>
-                                        <option value="2">مدينة 1</option>
-                                        <option value="3">مدينة 2</option>
-                                        <option value="3">مدينة 3</option>
-                                        <option value="3">مدينة 4</option>
-                                        <option value="3">مدينة 5</option>
-                                        <option value="3">مدينة 6</option>
+                                        <option value="2">3- 6 سنوات</option>
+                                        <option value="3">6 - 9 سنوات</option>
+                                        <option value="4">9 - 12 سنة</option>
+                                        <option value="5">13 - 15 سنة</option>
                                     </select>
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group">
-                            <label>نبذة تعرفية</label>
+                        <div class="form-group required">
+                            <label>وصف الخطه</label>
                             <textarea class="form-control"></textarea>
                         </div>
-                        <button class="btn btn-primary">
-                            حفظ التغييرات
-                        </button>
-                    </form>
-                    <form class="edit-pass">
-                        <div class="profile-head-flex">
-                            <h2 class="profile-title">
-                                تغيير كلمة المرور
-                            </h2>
-                        </div>
-                        <div class="form-group">
-                            <label>كلمة المرور القديمة</label>
-                            <span class="lnr lnr-eye show"></span>
-                            <input type="password" class="form-control">
-                        </div>
-                        <div class="form-line">
-                            <div class="form-group">
-                                <label>كلمة المرور الجديدة</label>
-                                <span class="lnr lnr-eye show"></span>
-                                <input type="password" class="form-control">
-                            </div>
-                            <div class="form-group">
-                                <label>إعادة كلمة المرور الجديدة</label>
-                                <span class="lnr lnr-eye show"></span>
-                                <input type="password" class="form-control">
+                        <div class="form-group required">
+                            <label>
+                                إضافة صورة رمزية
+                                <small>اضغط هنا لأختيار صورة من المكتبة</small>
+                            </label>
+                            <div class="addFile">
+                                <input type="file" accept="image/*" onChange="additemFiles(this);">
+                                <div class="addFile-icon">
+                                    <span class="lnr lnr-picture"></span>
+                                </div>
+                                <strong class="addFile-text">اضغط هنا أو قم بالسحب والإفلات</strong>
+                                <div class="filesPreview"></div>
                             </div>
                         </div>
                         <button class="btn btn-primary">
-                            حفظ التغييرات
+                            حفظ الخطة
                         </button>
                     </form>
                 </div>

@@ -283,6 +283,14 @@ $(document).ready(function () {
         $(".states-mobile").toggleClass("active")
         $(this).toggleClass("active")
     })
+    //////////** del btn **//////////
+    $(document).on('click', '.filesPreview>.file-pre>button', function (e) {
+        e.preventDefault()
+        var el = $(this).parents(".addFile").find("input");
+        el.wrap('<form>').closest('form').get(0).reset();
+        el.unwrap();
+        $(this).parent().remove();
+    });
 });
 function onScroll(event) {
     var scrollPos = $(document).scrollTop();
@@ -297,4 +305,18 @@ function onScroll(event) {
             currLink.removeClass("active");
         }
     });
+}
+function profileImg(input) {
+    $('.user-img-name img')[0].src = (window.URL ? URL : webkitURL).createObjectURL(input.files[0]);
+}
+function additemFiles(input) {
+    var preview = $(input).siblings(".filesPreview");
+    var val = input.files[0];
+    var size = (val.size / 1024).toFixed(1) + 'KB';
+    var name = val.name;
+    if (val) {
+        preview.html("")
+        var img = (window.URL ? URL : webkitURL).createObjectURL(val);
+        preview.append("<div class='file-pre'><img src='" + img + "'><div><span>" + name + "</span><span>" + size + "</span></div><button>حذف</button></div>")
+    }
 }

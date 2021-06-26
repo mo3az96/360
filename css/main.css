@@ -370,6 +370,14 @@ html[dir="ltr"] .search-input {
   color: #f00;
 }
 
+html[dir="rtl"] .form-group.required > label::after {
+  margin-left: 9px;
+}
+
+html[dir="ltr"] .form-group.required > label::after {
+  margin-right: 9px;
+}
+
 .form-group .show {
   position: absolute;
   top: 48px;
@@ -400,8 +408,26 @@ label {
   font-size: 16px;
   color: #000000;
   font-weight: 500;
-  margin: 0 0 8px;
+  margin: 0 0 10px;
   padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+label small {
+  font-size: 100%;
+  color: #f00;
+  font-weight: 500;
+  -webkit-box-ordinal-group: 4;
+      -ms-flex-order: 3;
+          order: 3;
 }
 
 .form-control {
@@ -2587,6 +2613,10 @@ header.header-scroll .logo {
 .user-cont {
   position: relative;
   z-index: 8;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
 }
 
 html[dir="rtl"] .user-cont {
@@ -4922,6 +4952,10 @@ html[dir="ltr"] .user-img-name .user-img .edit-img {
   opacity: 0;
 }
 
+.user-img-name .user-img .edit-img input::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
 .user-img-name .user-name {
   font-size: 24px;
   font-weight: 500;
@@ -5515,6 +5549,155 @@ html[dir="ltr"] .profile-table .progress-num span:first-of-type {
 }
 
 .mo-pages a.active {
+  color: #fff;
+  background-color: #8318a4;
+}
+
+.addFile {
+  border: 2px dashed #e6e6e6;
+  background-color: #fcfcfc;
+  border-radius: 26px;
+  min-height: 170px;
+  padding: 44px 22px 26px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  position: relative;
+}
+
+@media (max-width: 767px) {
+  .addFile {
+    padding: 25px 15px;
+  }
+}
+
+.addFile input {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  cursor: pointer;
+  opacity: 0;
+  width: 100%;
+}
+
+.addFile input::-webkit-file-upload-button {
+  cursor: pointer;
+}
+
+.addFile .addFile-icon {
+  font-size: 36px;
+  color: #8318a4;
+}
+
+.addFile .addFile-text {
+  font-weight: 500;
+  font-size: 16px;
+  color: #808080;
+}
+
+.addFile .filesPreview {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+}
+
+.addFile .file-pre {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e8e3ef;
+  padding: 6px 8px 6px 15px;
+  border-radius: 30px;
+  margin-bottom: 6px;
+}
+
+.addFile .file-pre:first-of-type {
+  margin-top: 38px;
+}
+
+.addFile .file-pre:last-of-type {
+  margin-bottom: 0;
+}
+
+.addFile .file-pre img {
+  height: 48px;
+  width: 48px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  border-radius: 50%;
+}
+
+.addFile .file-pre div {
+  margin: 0 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+  font-size: 14px;
+  color: #000000;
+}
+
+.addFile .file-pre div span {
+  max-width: 50%;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  .addFile .file-pre div {
+    margin: 0 10px;
+  }
+}
+
+.addFile .file-pre button {
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+  width: 80px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 36px;
+  border-radius: 18px;
+  background-color: #ed2929;
+  color: #fff;
+  font-size: 14px;
+  font-weight: 700;
+  border: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.addFile .file-pre button:hover, .addFile .file-pre button:focus {
   color: #fff;
   background-color: #8318a4;
 }

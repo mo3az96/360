@@ -3509,7 +3509,7 @@ html[dir="rtl"] .tools-line .more-fields {
   left: 0;
   right: 0;
   top: 84px;
-  z-index: 5;
+  z-index: 11;
 }
 
 @media (max-width: 991px) {

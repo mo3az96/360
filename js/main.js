@@ -296,13 +296,18 @@ $(document).ready(function () {
         }
     });
     //////////** textarea length **//////////
-
     $('textarea').on("input", function () {
         var maxlength = $(this).attr("maxlength");
         var currentLength = $(this).val().length;
         var left = maxlength - currentLength;
         $(this).parents(".form-group").find(".hint>span").html(left)
     });
+    //////////** caht users **//////////
+    $('.chat-window-title').click(function () {
+        $(".chat-users-window").slideToggle(300)
+        $(this).toggleClass("active")
+    })
+
 });
 function onScroll(event) {
     var scrollPos = $(document).scrollTop();

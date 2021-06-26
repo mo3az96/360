@@ -127,19 +127,19 @@ $(document).ready(function () {
     //////////** modal **//////////
     $('.log-btn,.user-btn').click(function () {
         $(".reg-modal").hide();
-        $(".login-modal").slideDown(300).scrollTop(0);
+        $(".login-modal").fadeIn(300).scrollTop(0);
         $(".modal-overlay").fadeIn(300);
         $("body").addClass("overflow");
     })
     $('.reg-btn').click(function () {
-        $(".login-modal").hide(300);
-        $(".reg-modal").slideDown(300).scrollTop(0);
+        $(".login-modal").hide();
+        $(".reg-modal").fadeIn(300).scrollTop(0);
         $(".modal-overlay").fadeIn(300);
         $("body").addClass("overflow");
     })
     $('.modal-overlay,.modal-close-btn').click(function () {
-        $(".login-modal").slideUp(300);
-        $(".reg-modal").slideUp(300);
+        $(".login-modal").fadeOut(300);
+        $(".reg-modal").fadeOut(300);
         $(".modal-overlay").fadeOut(300);
         $("body").removeClass("overflow");
     })

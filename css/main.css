@@ -2154,8 +2154,8 @@ html[dir="ltr"] .select2-container .select2-selection--single .select2-selection
 }
 
 .preloader img {
-  -webkit-animation: rotation 2s infinite linear;
-          animation: rotation 2s infinite linear;
+  -webkit-animation: rotation 1.5s infinite linear;
+          animation: rotation 1.5s infinite linear;
   width: 75px;
 }
 
@@ -2191,8 +2191,8 @@ html[dir="ltr"] .select2-container .select2-selection--single .select2-selection
 .lds-spinner div {
   -webkit-transform-origin: 40px 40px;
           transform-origin: 40px 40px;
-  -webkit-animation: lds-spinner 0.4s linear infinite;
-          animation: lds-spinner 0.4s linear infinite;
+  -webkit-animation: lds-spinner 0.8s linear infinite;
+          animation: lds-spinner 0.8s linear infinite;
 }
 
 .lds-spinner div:after {
@@ -2210,50 +2210,50 @@ html[dir="ltr"] .select2-container .select2-selection--single .select2-selection
 .lds-spinner div:nth-child(1) {
   -webkit-transform: rotate(0deg);
           transform: rotate(0deg);
-  -webkit-animation-delay: -0.35s;
-          animation-delay: -0.35s;
+  -webkit-animation-delay: -0.7s;
+          animation-delay: -0.7s;
 }
 
 .lds-spinner div:nth-child(2) {
   -webkit-transform: rotate(45deg);
           transform: rotate(45deg);
-  -webkit-animation-delay: -0.3s;
-          animation-delay: -0.3s;
+  -webkit-animation-delay: -0.6s;
+          animation-delay: -0.6s;
 }
 
 .lds-spinner div:nth-child(3) {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
-  -webkit-animation-delay: -0.25s;
-          animation-delay: -0.25s;
+  -webkit-animation-delay: -0.5s;
+          animation-delay: -0.5s;
 }
 
 .lds-spinner div:nth-child(4) {
   -webkit-transform: rotate(135deg);
           transform: rotate(135deg);
-  -webkit-animation-delay: -0.2s;
-          animation-delay: -0.2s;
+  -webkit-animation-delay: -0.4s;
+          animation-delay: -0.4s;
 }
 
 .lds-spinner div:nth-child(5) {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
-  -webkit-animation-delay: -0.15s;
-          animation-delay: -0.15s;
+  -webkit-animation-delay: -0.3s;
+          animation-delay: -0.3s;
 }
 
 .lds-spinner div:nth-child(6) {
   -webkit-transform: rotate(225deg);
           transform: rotate(225deg);
-  -webkit-animation-delay: -0.1s;
-          animation-delay: -0.1s;
+  -webkit-animation-delay: -0.2s;
+          animation-delay: -0.2s;
 }
 
 .lds-spinner div:nth-child(7) {
   -webkit-transform: rotate(270deg);
           transform: rotate(270deg);
-  -webkit-animation-delay: -0.05s;
-          animation-delay: -0.05s;
+  -webkit-animation-delay: -0.1s;
+          animation-delay: -0.1s;
 }
 
 .lds-spinner div:nth-child(8) {

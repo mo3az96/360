@@ -288,6 +288,260 @@
                             اضافة نشاط جديد
                         </h2>
                     </div>
+                    <form class="activity-form">
+                        <div class="form-line">
+                            <div class="form-group required">
+                                <label>عنوان النشاط</label>
+                                <input type="text" class="form-control">
+                            </div>
+                            <div class="form-group required">
+                                <label>المرحلة العمرية</label>
+                                <div class="profile-select-cont select-cont">
+                                    <select class="profile-select">
+                                        <option value="1">اختر</option>
+                                        <option value="2">3- 6 سنوات</option>
+                                        <option value="3">6 - 9 سنوات</option>
+                                        <option value="4">9 - 12 سنة</option>
+                                        <option value="5">13 - 15 سنة</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label>المجال</label>
+                                <div class="profile-select-cont select-cont">
+                                    <select class="profile-select">
+                                        <option value="1">اختر</option>
+                                        <option value="2">الأسري والاجتماعي</option>
+                                        <option value="3">الإيماني</option>
+                                        <option value="4">السلوكي والأخلاقي</option>
+                                        <option value="5">العقلي</option>
+                                        <option value="6">العلم الشرعي</option>
+                                        <option value="7">النفسي وادارة الذات</option>
+                                        <option value="8">الدعوي</option>
+                                        <option value="9">اللغة والتواصل</option>
+                                        <option value="10">القيادي والإداري</option>
+                                        <option value="11">الهوايات</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label>الزمن المتوقع</label>
+                                <div class="profile-select-cont select-cont">
+                                    <select class="profile-select">
+                                        <option value="1">اختر</option>
+                                        <option value="2">15 دقيقة فأقل</option>
+                                        <option value="3">15 - 30 دقيقة</option>
+                                        <option value="4">30 - 45 دقيقة</option>
+                                        <option value="5">45 - 60 دقيقة</option>
+                                        <option value="6">أكثر من ساعة</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label>
+                                وصف الخطه
+                                <span class="info" data-toggle="tooltip" data-placement="top"
+                                    title="قم بشرح فكرة النشاط بشكل مبسط">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                                <small>لا يزيد عن 300 حرف</small>
+                            </label>
+                            <textarea class="form-control" maxlength="300"></textarea>
+                            <span class="hint">متبقي <span>300</span> حرفا</span>
+                        </div>
+                        <div class="form-group required">
+                            <label>
+                                اجراءات النشاط
+                                <span class="info" data-toggle="tooltip" data-placement="top"
+                                    title="قم بشرح اجراءات النشاط بشكل مبسط">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                            </label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group required">
+                            <label>
+                                الأدوات الرئيسية
+                                <span class="info" data-toggle="tooltip" data-placement="top"
+                                    title="قم بتوضيح الأدوات الرئيسية للنشاط">
+                                    <i class="fas fa-info-circle"></i>
+                                </span>
+                            </label>
+                            <textarea class="form-control"></textarea>
+                        </div>
+                        <div class="form-group required">
+                            <label>
+                                إضافة صورة رمزية
+                                <strong>اضغط هنا لأختيار صورة من المكتبة</strong>
+                            </label>
+                            <div class="addFile">
+                                <input type="file" accept="image/*" onChange="additemFiles(this);">
+                                <div class="addFile-icon">
+                                    <span class="lnr lnr-picture"></span>
+                                </div>
+                                <strong class="addFile-text">اضغط هنا أو قم بالسحب والإفلات</strong>
+                                <div class="filesPreview"></div>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label>الاسلوب </label>
+                            <div class="select-options">
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">التلخيص</span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">التمثيل </span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">الزيارات</span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">المحاكاة </span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">المشاهد المرئية</span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">المشروع العملي </span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">الملاحظة</span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">النشيد </span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">تبادل أدوار</span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">دراسة حالة </span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">الألغاز الذهنية</span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">اللعبة الحركية </span>
+                                </label>
+                                <label class="custom-select-option">
+                                    <input type="checkbox">
+                                    <span class="check-mark"><i class="fas fa-check"></i></span>
+                                    <span class="text">القصة </span>
+                                </label>
+                            </div>
+                        </div>
+                        <div class="form-group required">
+                            <label>سمات النشاط </label>
+                            <div class="form-group required">
+                                <label>الجنس </label>
+                                <div class="select-options">
+                                    <label class="custom-select-option">
+                                        <input type="checkbox">
+                                        <span class="check-mark"><i class="fas fa-check"></i></span>
+                                        <span class="text">ذكور</span>
+                                    </label>
+                                    <label class="custom-select-option">
+                                        <input type="checkbox">
+                                        <span class="check-mark"><i class="fas fa-check"></i></span>
+                                        <span class="text">إناث</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label>العدد </label>
+                                <div class="select-options">
+                                    <label class="custom-select-option">
+                                        <input type="checkbox">
+                                        <span class="check-mark"><i class="fas fa-check"></i></span>
+                                        <span class="text">مجموعة كبيرة</span>
+                                    </label>
+                                    <label class="custom-select-option">
+                                        <input type="checkbox">
+                                        <span class="check-mark"><i class="fas fa-check"></i></span>
+                                        <span class="text">مجموعه صغيرة</span>
+                                    </label>
+                                    <label class="custom-select-option">
+                                        <input type="checkbox">
+                                        <span class="check-mark"><i class="fas fa-check"></i></span>
+                                        <span class="text">فردي</span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="form-group required">
+                                <label>المكان </label>
+                                <div class="select-options">
+                                    <label class="custom-select-option">
+                                        <input type="radio" name="place">
+                                        <span class="check-mark"><i class="fas fa-check"></i></span>
+                                        <span class="text">مفتوح</span>
+                                    </label>
+                                    <label class="custom-select-option">
+                                        <input type="radio" name="place">
+                                        <span class="check-mark"><i class="fas fa-check"></i></span>
+                                        <span class="text">مغلق </span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                إضافة صور (اختياري)
+                            </label>
+                            <div class="addFile">
+                                <input type="file" accept="image/*" onChange="additemFiles(this);" multiple>
+                                <div class="addFile-icon">
+                                    <span class="lnr lnr-picture"></span>
+                                </div>
+                                <strong class="addFile-text">اضغط هنا أو قم بالسحب والإفلات</strong>
+                                <div class="filesPreview"></div>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label>
+                                إضافة مرفقات
+                            </label>
+                            <div class="addFile">
+                                <input type="file" onChange="additemFiles(this);" multiple>
+                                <div class="addFile-icon">
+                                    <span class="lnr lnr-file-empty"></span>
+                                </div>
+                                <strong class="addFile-text">اضغط هنا أو قم بالسحب والإفلات</strong>
+                                <div class="filesPreview"></div>
+                            </div>
+                        </div>
+                        <div class="buttons">
+                            <button class="btn btn-secondary">
+                                حفظ
+                            </button>
+                            <button class="btn btn-primary">
+                                نشر
+                            </button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </div>

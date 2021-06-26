@@ -287,9 +287,21 @@ $(document).ready(function () {
     $(document).on('click', '.filesPreview>.file-pre>button', function (e) {
         e.preventDefault()
         var el = $(this).parents(".addFile").find("input");
-        el.wrap('<form>').closest('form').get(0).reset();
-        el.unwrap();
-        $(this).parent().remove();
+        if (el.attr("multiple")) {
+            $(this).parent().remove();
+        } else {
+            el.wrap('<form>').closest('form').get(0).reset();
+            el.unwrap();
+            $(this).parent().remove();
+        }
+    });
+    //////////** textarea length **//////////
+
+    $('textarea').on("input", function () {
+        var maxlength = $(this).attr("maxlength");
+        var currentLength = $(this).val().length;
+        var left = maxlength - currentLength;
+        $(this).parents(".form-group").find(".hint>span").html(left)
     });
 });
 function onScroll(event) {
@@ -311,12 +323,17 @@ function profileImg(input) {
 }
 function additemFiles(input) {
     var preview = $(input).siblings(".filesPreview");
-    var val = input.files[0];
-    var size = (val.size / 1024).toFixed(1) + 'KB';
-    var name = val.name;
-    if (val) {
-        preview.html("")
+    var files = input.files;
+    preview.html("")
+    for (let i = 0; i < files.length; i++) {
+        var val = input.files[i];
+        var size = (val.size / 1024).toFixed(1) + 'KB';
+        var name = val.name;
         var img = (window.URL ? URL : webkitURL).createObjectURL(val);
-        preview.append("<div class='file-pre'><img src='" + img + "'><div><span>" + name + "</span><span>" + size + "</span></div><button>حذف</button></div>")
+        if ($(input).attr("accept") == "image/*") {
+            preview.append("<div class='file-pre'><img src='" + img + "'><div><span>" + name + "</span><span>" + size + "</span></div><button>حذف</button></div>")
+        } else {
+            preview.append("<div class='file-pre'><i class='fas fa-file-pdf'></i><div><span>" + name + "</span><span>" + size + "</span></div><button>حذف</button></div>")
+        }
     }
 }

@@ -2333,10 +2333,12 @@ html[dir="ltr"] .select2-container .select2-selection--single .select2-selection
 }
 
 .lds-spinner {
-  margin: 35px auto 0;
+  margin: 35px auto 100px;
   position: relative;
   width: 50px;
   height: 50px;
+  -webkit-transform: translateX(-16px);
+          transform: translateX(-16px);
 }
 
 .lds-spinner div {
@@ -6316,6 +6318,15 @@ html[dir="ltr"] .msg.out .sender {
   z-index: 2;
 }
 
+@media (max-width: 767px) {
+  .app-links {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
 .app-links a {
   display: block;
   border-radius: 30px;
@@ -6343,6 +6354,12 @@ html[dir="ltr"] .msg.out .sender {
 .app-links a:hover::before {
   -webkit-animation: shine 1s ease forwards;
           animation: shine 1s ease forwards;
+}
+
+@media (max-width: 767px) {
+  .app-links a ~ a {
+    margin-top: 10px;
+  }
 }
 
 .footer {

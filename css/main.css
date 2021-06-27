@@ -165,12 +165,12 @@ h3 {
 }
 
 .page-content {
-  margin-bottom: 130px;
+  margin-bottom: 115px;
 }
 
 @media (max-width: 991px) {
   .page-content {
-    margin-bottom: 50px;
+    margin-bottom: 70px;
   }
 }
 
@@ -6300,6 +6300,143 @@ html[dir="rtl"] .msg.out .sender {
 
 html[dir="ltr"] .msg.out .sender {
   left: 0;
+}
+
+.about-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 70px;
+}
+
+@media (max-width: 991px) {
+  .about-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 15px;
+    margin-top: 40px;
+  }
+}
+
+.about-text p {
+  font-size: 18px;
+  line-height: 1.889;
+  text-align: justify;
+  color: #000000;
+}
+
+html[dir="rtl"] .about-text {
+  padding-left: 10px;
+}
+
+html[dir="ltr"] .about-text {
+  padding-right: 10px;
+}
+
+@media (max-width: 991px) {
+  .about-text {
+    -ms-grid-row: 2;
+    grid-row: 2;
+    text-align-last: center;
+  }
+  html[dir="rtl"] .about-text {
+    padding-left: 0;
+  }
+  html[dir="ltr"] .about-text {
+    padding-right: 0;
+  }
+}
+
+.about-img {
+  margin: auto;
+  text-align: center;
+}
+
+@media (max-width: 991px) {
+  .about-img {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+}
+
+.about-items-grid {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  gap: 30px;
+  margin-top: 115px;
+}
+
+.about-items-grid .item-grid {
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 991px) {
+  .about-items-grid {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    gap: 60px;
+    margin-top: 70px;
+  }
+}
+
+.about-item {
+  border: 3px solid #f2f2f2;
+  text-align: center;
+  position: relative;
+  padding: 63px 32px 36px;
+  border-radius: 3px;
+}
+
+@media (max-width: 991px) {
+  .about-item {
+    width: 100%;
+    max-width: 360px;
+    margin: auto;
+  }
+}
+
+.about-item .about-icon {
+  border-radius: 50%;
+  width: 92px;
+  height: 92px;
+  background-color: #8318a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  left: 50%;
+  top: 0;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.about-item .about-item-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #000000;
+  margin: 0 0 11px;
+}
+
+.about-item .about-item-desc {
+  font-size: 16px;
+  color: #000000;
+  line-height: 1.563;
+  text-align: justify;
+  text-align-last: center;
+  margin: 0;
 }
 
 .app-links-section {

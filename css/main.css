@@ -3169,6 +3169,13 @@ html[dir="ltr"] .add-act-btn {
   margin-bottom: 47px;
 }
 
+.list-page-head .page-title {
+  margin: 0;
+  font-weight: 700;
+  color: #8318a4;
+  font-size: 26px;
+}
+
 @media (max-width: 991px) {
   .list-page-head {
     -webkit-box-pack: center;
@@ -3352,6 +3359,46 @@ html[dir="ltr"] .view-btn {
 .view-btn.active {
   fill: #8318a4;
   stroke: #8318a4;
+}
+
+@media (max-width: 991px) {
+  .guest-page .list-page-head {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 0;
+    padding: 15px 0;
+    margin: 15px 0;
+    background-color: #fff;
+    -webkit-box-shadow: unset;
+            box-shadow: unset;
+    position: static;
+    left: auto;
+    right: auto;
+    top: auto;
+    z-index: 11;
+  }
+}
+
+html[dir="rtl"] .guest-page .sort-cont {
+  margin-right: auto;
+  margin-left: 15px;
+}
+
+html[dir="ltr"] .guest-page .sort-cont {
+  margin-left: auto;
+  margin-right: 15px;
+}
+
+@media (max-width: 991px) {
+  html[dir="rtl"] .guest-page .sort-cont {
+    margin-right: auto;
+    margin-left: 0;
+  }
+  html[dir="ltr"] .guest-page .sort-cont {
+    margin-left: auto;
+    margin-right: 0;
+  }
 }
 
 .activities-saerch {
@@ -5142,6 +5189,7 @@ html[dir="ltr"] .user-img-name .user-img .edit-img {
   font-size: 24px;
   font-weight: 500;
   color: #000000;
+  margin: 0;
 }
 
 html[dir="rtl"] .user-img-name .user-name {
@@ -6300,6 +6348,67 @@ html[dir="rtl"] .msg.out .sender {
 
 html[dir="ltr"] .msg.out .sender {
   left: 0;
+}
+
+.send-msg {
+  padding: 0 27px;
+  background-color: #8318a4;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  margin-top: 10px;
+}
+
+.send-msg .text {
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+html[dir="rtl"] .send-msg .text {
+  margin-right: 11px;
+}
+
+html[dir="ltr"] .send-msg .text {
+  margin-left: 11px;
+}
+
+.send-msg .lnr {
+  color: #ffbd00;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@media (max-width: 991px) {
+  .send-msg .lnr {
+    color: #fff;
+  }
+}
+
+.send-msg:hover {
+  background-color: #ffbd00;
+  text-decoration: none;
+}
+
+.send-msg:hover .text {
+  color: #8318a4;
+}
+
+.send-msg:hover .lnr {
+  color: #8318a4;
 }
 
 .about-grid {

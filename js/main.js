@@ -176,11 +176,13 @@ $(document).ready(function () {
             $(".activities-saerch").addClass("active");
             $(".plans-saerch").addClass("active");
             $(".filter-overlay").fadeIn(300);
+            $("body").addClass("overflow");
         })
         $('.filter-overlay').click(function () {
             $(".activities-saerch").removeClass("active");
             $(".plans-saerch").removeClass("active");
             $(".filter-overlay").fadeOut(300);
+            $("body").removeClass("overflow");
         })
     }
     //////////** activity imgs **//////////
@@ -278,11 +280,6 @@ $(document).ready(function () {
         }
         $(this).toggleClass("active")
     })
-    //////////** states **//////////
-    $('.states-btn').click(function () {
-        $(".states-mobile").toggleClass("active")
-        $(this).toggleClass("active")
-    })
     //////////** del btn **//////////
     $(document).on('click', '.filesPreview>.file-pre>button', function (e) {
         e.preventDefault()
@@ -307,7 +304,14 @@ $(document).ready(function () {
         $(".chat-users-window").slideToggle(300)
         $(this).toggleClass("active")
     })
-
+    $(window).scroll(function () {
+        var els = $('.progress-bar')
+        for (let i = 0; i < els.length; i++) {
+            if ($(window).scrollTop() >= ($(els[i]).offset().top) - 700) {
+                $(els[i]).css("width", "100%");
+            }
+        }
+    });
 });
 function onScroll(event) {
     var scrollPos = $(document).scrollTop();
@@ -335,10 +339,13 @@ function additemFiles(input) {
         var size = (val.size / 1024).toFixed(1) + 'KB';
         var name = val.name;
         var img = (window.URL ? URL : webkitURL).createObjectURL(val);
-        if ($(input).attr("accept") == "image/*") {
+        if (val.type.split("/")[0] == "image") {
             preview.append("<div class='file-pre'><img src='" + img + "'><div><span>" + name + "</span><span>" + size + "</span></div><button>حذف</button></div>")
-        } else {
+        } else if (val.type == "application/pdf") {
             preview.append("<div class='file-pre'><i class='fas fa-file-pdf'></i><div><span>" + name + "</span><span>" + size + "</span></div><button>حذف</button></div>")
+        } else {
+            preview.append("<div class='file-pre'><i class='fas fa-file-alt'></i><div><span>" + name + "</span><span>" + size + "</span></div><button>حذف</button></div>")
         }
+        console.log(val.type);
     }
 }

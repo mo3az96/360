@@ -647,6 +647,12 @@ html[dir="ltr"] .agree .custom-checkbox {
   opacity: 0;
 }
 
+@media (max-width: 767px) {
+  .agree .text {
+    display: block;
+  }
+}
+
 .buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1977,6 +1983,12 @@ html[dir="ltr"] .other-modal a {
   opacity: 0;
 }
 
+@media (max-width: 767px) {
+  .frgt {
+    margin-bottom: 10px;
+  }
+}
+
 .modal-submit {
   width: 100%;
   background-color: #8318a4;
@@ -3163,7 +3175,7 @@ html[dir="ltr"] .add-act-btn {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 0;
-    padding: 20px 0;
+    padding: 15px 0;
     margin: 0 -15px;
     margin-bottom: 35px;
     background-color: #fff;
@@ -3215,15 +3227,15 @@ html[dir="ltr"] .sort-cont .label {
 
 @media (max-width: 991px) {
   .sort-cont .label {
-    font-size: 15px;
+    font-size: 12px;
     color: #999999;
   }
   html[dir="rtl"] .sort-cont .label {
     margin-left: 0;
-    margin-right: 3px;
+    margin-right: 8px;
   }
   html[dir="ltr"] .sort-cont .label {
-    margin-left: 3px;
+    margin-left: 8px;
     margin-right: 0;
   }
 }
@@ -3247,7 +3259,7 @@ html[dir="ltr"] .sort-cont .label {
 .sort-cont .fas {
   display: none;
   color: #999999;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media (max-width: 991px) {
@@ -3268,21 +3280,21 @@ html[dir="ltr"] .sort-cont .label {
   padding: 0;
   font-weight: 700;
   color: #999999;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 html[dir="rtl"] .filters-btn .label {
-  margin-right: 3px;
+  margin-right: 8px;
 }
 
 html[dir="ltr"] .filters-btn .label {
-  margin-left: 3px;
+  margin-left: 8px;
 }
 
 .filters-btn .fas {
   display: block;
   color: #999999;
-  font-size: 18px;
+  font-size: 14px;
 }
 
 @media (max-width: 991px) {
@@ -3662,7 +3674,7 @@ html[dir="rtl"] .tools-line .more-fields {
 @media (max-width: 991px) {
   .activities-saerch {
     background-color: #f7f7f7;
-    padding: 25px 15px;
+    padding: 25px 15px 75px;
     overflow-y: auto;
     height: 100vh;
     max-height: 100vh;
@@ -3814,6 +3826,9 @@ html[dir="ltr"] .mo-tabs a .text {
 }
 
 @media (max-width: 767px) {
+  .mo-tabs a .text {
+    font-size: 14px;
+  }
   html[dir="rtl"] .mo-tabs a .text {
     margin-right: 3px;
   }
@@ -3911,7 +3926,7 @@ html[dir="ltr"] .mo-tabs a .text {
       -ms-flex-pack: center;
           justify-content: center;
   width: 46px;
-  height: 47px;
+  height: 46px;
   border-radius: 50%;
   font-size: 22px;
   color: #fff;
@@ -4864,7 +4879,7 @@ html[dir="ltr"] .plans-saerch-submit {
 @media (max-width: 991px) {
   .plans-saerch {
     background-color: #f7f7f7;
-    padding: 25px 15px;
+    padding: 25px 15px 75px;
     overflow-y: auto;
     height: 100vh;
     max-height: 100vh;
@@ -5044,6 +5059,12 @@ html[dir="ltr"] .plan-num ~ .plan-num {
           align-items: center;
 }
 
+@media (max-width: 767px) {
+  .user-img-name {
+    width: 100%;
+  }
+}
+
 .user-img-name .user-img {
   width: 115px;
   height: 115px;
@@ -5108,6 +5129,13 @@ html[dir="ltr"] .user-img-name .user-img .edit-img {
 
 .user-img-name .user-img .edit-img input::-webkit-file-upload-button {
   cursor: pointer;
+}
+
+@media (max-width: 767px) {
+  .user-img-name .user-img {
+    width: 95px;
+    height: 95px;
+  }
 }
 
 .user-img-name .user-name {

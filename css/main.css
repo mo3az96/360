@@ -1745,6 +1745,10 @@ html[dir="ltr"] .similar-slider .service-item .service-item-desc {
   margin-bottom: 9px;
 }
 
+.fav-tool.active {
+  background-color: #e31b23;
+}
+
 .modal-overlay {
   position: fixed;
   top: 0;
@@ -4597,6 +4601,31 @@ html[dir="ltr"] .comment .time {
   text-decoration: none;
 }
 
+.comment .add-report {
+  font-size: 14px;
+  color: #8318a4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.comment .add-report:hover, .comment .add-report:focus {
+  color: #ffbd00;
+  text-decoration: none;
+}
+
+.comment .add-report::before {
+  color: #8318a4;
+  content: "-";
+  margin: 0 5px;
+  pointer-events: none;
+}
+
 .comment:last-of-type {
   padding-bottom: 0;
   border-bottom: none;
@@ -4792,6 +4821,68 @@ html[dir="ltr"] .aside-reviews-total .count {
 .activity-page .page-title-mobile {
   text-align: center;
   margin: 30px;
+}
+
+.complete-tool.active {
+  background-color: #228b22;
+}
+
+.complete-tool.active span::before {
+  content: "\e87f";
+}
+
+.complete-tool.active:hover, .complete-tool.active:focus {
+  color: #fff;
+  background-color: #8318a4;
+  text-decoration: none;
+}
+
+.complete-tool span::before {
+  margin-left: 2px;
+  margin-bottom: 2px;
+}
+
+@media print {
+  .col-xl-8.col-lg-7 {
+    width: 210mm;
+    margin: auto;
+  }
+  header {
+    display: none;
+  }
+  .breadcrumb-section {
+    display: none;
+  }
+  .sticky-section {
+    display: none;
+  }
+  aside {
+    display: none;
+  }
+  .app-links-section {
+    display: none;
+  }
+  footer {
+    display: none;
+  }
+  #reviews {
+    display: none;
+  }
+  .tooltip {
+    display: none;
+  }
+  .swiper-pagination {
+    display: none !important;
+  }
+  a {
+    text-decoration: none !important;
+  }
+  .swiper-slide {
+    width: 210mm;
+  }
+  .swiper-slide img {
+    width: 210mm;
+  }
 }
 
 .plans-saerch {
@@ -6350,8 +6441,18 @@ html[dir="ltr"] .msg.out .sender {
   left: 0;
 }
 
+.user-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
 .send-msg {
-  padding: 0 27px;
+  padding: 0 20px;
   background-color: #8318a4;
   height: 39px;
   display: -webkit-box;
@@ -6366,7 +6467,6 @@ html[dir="ltr"] .msg.out .sender {
   border-radius: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
-  margin-top: 10px;
 }
 
 .send-msg .text {
@@ -6378,11 +6478,11 @@ html[dir="ltr"] .msg.out .sender {
 }
 
 html[dir="rtl"] .send-msg .text {
-  margin-right: 11px;
+  margin-right: 7px;
 }
 
 html[dir="ltr"] .send-msg .text {
-  margin-left: 11px;
+  margin-left: 7px;
 }
 
 .send-msg .lnr {
@@ -6409,6 +6509,68 @@ html[dir="ltr"] .send-msg .text {
 
 .send-msg:hover .lnr {
   color: #8318a4;
+}
+
+.follow {
+  padding: 0 20px;
+  background-color: #ffbd00;
+  height: 39px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border-radius: 20px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.follow .text {
+  color: #8318a4;
+  font-size: 15px;
+  font-weight: 700;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.follow .lnr {
+  color: #8318a4;
+  font-size: 18px;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+html[dir="rtl"] .follow .lnr {
+  margin-left: 7px;
+}
+
+html[dir="ltr"] .follow .lnr {
+  margin-right: 7px;
+}
+
+.follow:hover {
+  background-color: #8318a4;
+  text-decoration: none;
+}
+
+.follow:hover .text {
+  color: #fff;
+}
+
+.follow:hover .lnr {
+  color: #fff;
+}
+
+html[dir="rtl"] .follow {
+  margin-right: 5px;
+}
+
+html[dir="ltr"] .follow {
+  margin-left: 5px;
 }
 
 .about-grid {

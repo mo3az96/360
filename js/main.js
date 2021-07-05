@@ -304,6 +304,7 @@ $(document).ready(function () {
         $(".chat-users-window").slideToggle(300)
         $(this).toggleClass("active")
     })
+    //////////** progress bar **//////////
     $(window).scroll(function () {
         var els = $('.progress-bar')
         for (let i = 0; i < els.length; i++) {

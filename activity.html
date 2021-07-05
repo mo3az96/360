@@ -225,7 +225,8 @@
                     </li>
                 </ul>
                 <div class="sticky-tools">
-                    <a href="#!" class="sticky-tool" data-toggle="tooltip" data-placement="top" title="اضف للمفضلة">
+                    <a href="#!" class="sticky-tool fav-tool active" data-toggle="tooltip" data-placement="top"
+                        title="اضف للمفضلة">
                         <span class="lnr lnr-heart"></span>
                     </a>
                     <a href="#!" class="sticky-tool" data-toggle="tooltip" data-placement="top" title="اضف لخططي">
@@ -239,7 +240,7 @@
                                 d="M1.291,10.000 L19.309,10.000 L1.291,10.000 Z" />
                         </svg>
                     </a>
-                    <a role="button" class="sticky-tool" data-toggle="tooltip" data-placement="top"
+                    <a role="button" class="sticky-tool complete-tool active" data-toggle="tooltip" data-placement="top"
                         title="تأكيد تنفيذ النشاط">
                         <span class="lnr lnr-plus-circle"></span>
                     </a>
@@ -250,7 +251,8 @@
                                 d="M16.971,13.678 C15.701,13.678 14.564,14.259 13.810,15.170 L8.902,12.376 C9.055,11.946 9.138,11.483 9.138,11.000 C9.138,10.518 9.055,10.055 8.902,9.624 L13.809,6.830 C14.563,7.740 15.701,8.322 16.971,8.322 C19.237,8.322 21.080,6.473 21.080,4.200 C21.080,1.928 19.237,0.080 16.971,0.080 C14.705,0.080 12.862,1.928 12.862,4.200 C12.862,4.683 12.946,5.146 13.098,5.576 L8.191,8.371 C7.436,7.461 6.299,6.880 5.030,6.880 C2.764,6.880 0.920,8.728 0.920,11.000 C0.920,13.272 2.764,15.120 5.030,15.120 C6.299,15.120 7.436,14.540 8.190,13.629 L13.098,16.423 C12.946,16.854 12.862,17.317 12.862,17.799 C12.862,20.071 14.705,21.920 16.971,21.920 C19.237,21.920 21.080,20.071 21.080,17.799 C21.080,15.527 19.237,13.678 16.971,13.678 L16.971,13.678 ZM16.971,1.522 C18.444,1.522 19.642,2.723 19.642,4.200 C19.642,5.678 18.444,6.880 16.971,6.880 C15.498,6.880 14.300,5.678 14.300,4.200 C14.300,2.723 15.498,1.522 16.971,1.522 L16.971,1.522 ZM5.030,13.678 C3.556,13.678 2.358,12.477 2.358,11.000 C2.358,9.523 3.556,8.322 5.030,8.322 C6.503,8.322 7.701,9.523 7.701,11.000 C7.701,12.477 6.503,13.678 5.030,13.678 L5.030,13.678 ZM16.971,20.478 C15.498,20.478 14.300,19.277 14.300,17.799 C14.300,16.322 15.498,15.120 16.971,15.120 C18.444,15.120 19.642,16.322 19.642,17.799 C19.642,19.277 18.444,20.478 16.971,20.478 L16.971,20.478 Z" />
                         </svg>
                     </a>
-                    <a href="#!" class="sticky-tool" data-toggle="tooltip" data-placement="top" title="طباعه">
+                    <a role="button" class="sticky-tool print-tool" data-toggle="tooltip" data-placement="top"
+                        title="طباعه" onclick="window.print();">
                         <span class="lnr lnr-printer"></span>
                     </a>
                 </div>
@@ -454,6 +456,9 @@
                                                 <a href="#!" class="add-reply">
                                                     اضف رد
                                                 </a>
+                                                <a href="#!" class="add-report">
+                                                    إبلاغ
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -476,6 +481,9 @@
                                                         </span>
                                                         <a href="#!" class="add-reply">
                                                             اضف رد
+                                                        </a>
+                                                        <a href="#!" class="add-report">
+                                                            إبلاغ
                                                         </a>
                                                     </div>
                                                 </div>
@@ -503,6 +511,9 @@
                                                 </span>
                                                 <a href="#!" class="add-reply">
                                                     اضف رد
+                                                </a>
+                                                <a href="#!" class="add-report">
+                                                    إبلاغ
                                                 </a>
                                             </div>
                                         </div>
@@ -533,6 +544,19 @@
                                 <div class="form-group required">
                                     <label>التعليق</label>
                                     <textarea class="form-control"></textarea>
+                                </div>
+                                <div class="form-group">
+                                    <label>
+                                        إضافة مرفقات
+                                    </label>
+                                    <div class="addFile">
+                                        <input type="file" onChange="additemFiles(this);" multiple>
+                                        <div class="addFile-icon">
+                                            <span class="lnr lnr-file-empty"></span>
+                                        </div>
+                                        <strong class="addFile-text">اضغط هنا أو قم بالسحب والإفلات</strong>
+                                        <div class="filesPreview"></div>
+                                    </div>
                                 </div>
                                 <button class="btn btn-primary">
                                     اضافة تعليق

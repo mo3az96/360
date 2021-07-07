@@ -1513,7 +1513,6 @@ html[dir="ltr"] .sub-menu::after {
   width: 33px;
   height: 33px;
   border-radius: 50%;
-  background-color: #8318a4;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1524,7 +1523,6 @@ html[dir="ltr"] .sub-menu::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 8px;
 }
 
 .service-item .owner .owner-name {
@@ -4050,7 +4048,6 @@ html[dir="ltr"] .sticky-tool ~ .sticky-tool {
   width: 45px;
   height: 45px;
   border-radius: 50%;
-  background-color: #8318a4;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -4061,7 +4058,6 @@ html[dir="ltr"] .sticky-tool ~ .sticky-tool {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 0 8px;
 }
 
 .activity-owner .owner-name {

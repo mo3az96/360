@@ -35,6 +35,7 @@ $(document).ready(function () {
     }
     //////////** tooltip **//////////
     $('[data-toggle="tooltip"]').tooltip();
+
     //////////** main slider **//////////
     var mainswiper = new Swiper('.main-slider .swiper-container', {
         spaceBetween: 10,
@@ -350,3 +351,10 @@ function additemFiles(input) {
         console.log(val.type);
     }
 }
+
+
+$(document).ready(function () {
+    $('[data-toggle="tooltip"]').on('focus', function () {
+        $(this).tooltip('hide');
+    });
+});

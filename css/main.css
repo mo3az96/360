@@ -1581,12 +1581,12 @@ html[dir="ltr"] .sub-menu::after {
   transition: all 0.3s ease-in-out;
 }
 
-.service-item .service-item-tool:hover, .service-item .service-item-tool:focus {
+.service-item .service-item-tool:hover {
   text-decoration: none;
   background-color: #8318a4;
 }
 
-.service-item .service-item-tool:hover span, .service-item .service-item-tool:focus span {
+.service-item .service-item-tool:hover span {
   color: #f2f2f2;
 }
 
@@ -3992,7 +3992,7 @@ html[dir="ltr"] .sticky-tool ~ .sticky-tool {
   margin-left: 15px;
 }
 
-.sticky-tool:hover, .sticky-tool:focus {
+.sticky-tool:hover {
   color: #fff;
   background-color: #8318a4;
   text-decoration: none;
